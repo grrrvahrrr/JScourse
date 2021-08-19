@@ -127,27 +127,37 @@ if (null == null)      //true
 
 //Task 8
 /*
-function power(val, pow){
+function power(val, pow){  
     
-    --pow;        
-    if(pow > 0){  
+    if(pow === 0){
+        return 1;
+    }
+    else{
+        --pow;        
+        if(pow > 0){  
 
-        if(typeof a === 'undefined'){
-            a = val * val;            
-        }
-        else {
-             a *= val;            
-        }
+            if(typeof a === 'undefined'){
+                a = val * val;            
+            }
+            else {
+                a *= val;            
+            }
 
-        return power (val, pow); 
+            return power (val, pow); 
 
-    } 
+        } 
 
-    else {        
-        return a;
-    }      
+        else {  
+            if(typeof a === 'undefined'){      
+                return val;
+            }
+            else{
+                return a;
+            }
+
+        }  
+    }    
 }
 
-alert(power(4,3));
-
+alert(power(2,5));
 */
