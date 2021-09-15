@@ -270,6 +270,10 @@ function countCartQuantity(cart) {
 //console.log(mycart);
 
 function TotalCart(){
+
+    if(document.getElementById("empty")){
+        document.getElementById("empty").remove();                
+        }
     
     for(var i = 0; i < mycart.length; i++){
         if(document.getElementById('item' + i)){
@@ -281,6 +285,7 @@ function TotalCart(){
 
     if (countCartPrice(mycart) === 0){
         let empty = document.createElement("H2");
+        empty.id = "empty";
         empty.textContent = 'Shopping cart is Empty!'    
 
         cart.appendChild(empty);
@@ -315,3 +320,5 @@ function TotalCart(){
         
     }
 }
+
+TotalCart();
