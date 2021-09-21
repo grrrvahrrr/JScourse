@@ -1,0 +1,42 @@
+
+.buttons{
+    float: left;
+    
+    background-color: green;
+    
+}
+.snake-start{
+    
+    
+    background-color: teal;
+}
+
+.snake-renew{
+    
+    
+    background-color: greenyellow;
+}
+
+
+.game-table-cell{
+    width: 20px;
+    height: 20px;
+    background-color: gray; 
+}
+
+.snake-unit{    
+    background-color: white; 
+}
+
+.food-unit{
+    background-color: red;
+}
+
+.barrier-unit{
+    background-color: yellow;
+}
+
+
+
+
+
